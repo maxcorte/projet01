@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-programs=("./philosophes" "./producteurs_consommateurs" ."/lecteurs_ecrivains")
+programs=("./question11" "./question12" ."/question13")
 
 threads=(2 4 8 16 32)
 measures=5
@@ -9,7 +9,7 @@ for prog in "${programs[@]}"; do
     csv_file="${prog##./}_performance.csv"
     echo "thread_total,run_index,total_time_seconds" > "$csv_file"
     for thread_numbers in "${threads[@]}"; do
-        if [ "$prog" != "philosophes" ]; then
+        if [ "$prog" != "question11" ]; then
             thread1=$((thread_numbers/2))
             thread2=$((thread_numbers/2))
             for ((i=1; i<=measures; i++)); do
