@@ -5,7 +5,7 @@ C_BINS = question11 question12 question13
 
 .PHONY: all clean bash python
 
-all: $(C_BINS) bash python
+all: $(C_BINS)
 
 question11: question11.c
 	$(CC) $(CFLAGS) $< -o $@
