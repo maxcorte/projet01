@@ -56,4 +56,4 @@ clean:
 	rm -f ./question2511_performance.csv ./question2512_performance.csv ./question2513_performance.csv
 	rm -f ./question11.pdf ./question12.pdf ./question13.pdf
 	rm -f ./question21.pdf ./question22.pdf ./question23.pdf ./PlotQuestion_22_23.pdf
-	rm -f ./GlobalPlotQuestion1.pdf ./GlobalPlotQuestion2.pdf ./GlobalPlotQuestion3.pdf
+	rm -f ./GlobalPlotQuestion0.pdf ./GlobalPlotQuestion1.pdf ./GlobalPlotQuestion2.pdf

@@ -27,13 +27,13 @@ yerror2 = question2_stddev.values
 y3 = question3_mean.values
 yerror3 = question3_stddev.values
 
-max_y = np.max(y2, y3)
+max_y = max(np.max(y2), np.max(y3))
 
 plt.figure()
 plt.title(title)
 plt.xlabel('Nombre de threads')
 plt.ylabel('Temps en secondes')
-plt.ylim([0, max_y+max_y*0,5])
+plt.ylim([0, max_y+max_y*0.5])
 plt.errorbar(x, y2, yerror2, marker='o', capsize=4, color='indigo', label="Algorithme test-and-set")
 plt.errorbar(x, y3, yerror3, marker='o', capsize=4, color='blue', label="Algorithme test-and-test-and-set")
 plt.xticks(ticks=x, labels=x)
@@ -75,7 +75,7 @@ for i in range(0, len(files_active_wait)):
     match title_graph:
         case "question2511":
             title_graph = "Problème des philosophes"
-        case "question2511":
+        case "question2512":
             title_graph = "Problème des producteurs et consommateurs"
         case "question2513":
             title_graph = "Problème des lecteurs et écrivains"
@@ -89,14 +89,14 @@ for i in range(0, len(files_active_wait)):
     passive_y = passive_wait_data_mean.values
     passive_yerror = passive_wait_data_stddev.values
 
-    max_y = np.max(passive_y, active_y)
+    max_y = max(np.max(passive_y), np.max(active_y))
 
 
     plt.figure()
     plt.title(title_graph)
     plt.xlabel('thread numbers')
     plt.ylabel('time in seconds')
-    plt.ylim([0, max_y+max_y*0,5])
+    plt.ylim([0, max_y+max_y*0.5])
     plt.errorbar(x, active_y, active_yerror, marker='o', capsize=4, color='indigo', label="Moyenne avec attente active")
     plt.errorbar(x, passive_y, passive_yerror, marker='o', capsize=4, color='blue', label="Moyenne avec attente passive")
     plt.xticks(ticks=x, labels=x)
