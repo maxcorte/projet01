@@ -36,3 +36,7 @@ python:
 	
 clean:
 	rm -f $(C_BINS)
+	rm -f ./question11_performance.csv ./question12_performance.csv ./question13_performance.csv
+	rm -f ./question21_performance.csv ./question22_performance.csv ./question23_performance.csv
+	rm -f ./question11.pdf ./question12.pdf ./question13.pdf
+	rm -f ./question21.pdf ./question22.pdf ./question23.pdf
