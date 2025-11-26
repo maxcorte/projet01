@@ -2,7 +2,7 @@
 
 programs=("./question11" "./question12" ."/question13")
 
-threads=(2 4 8 16 32)
+threads=(1 2 4 8 16 32)
 measures=5
 
 for prog in "${programs[@]}"; do

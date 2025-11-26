@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-programs=("./question21" "./question22" "./question23")
+programs=("./question21" "./question22" "./question23" "./question2511" "./question2512" "./question2513")
 
 threads=(1 2 4 8 16 32)
 measures=5

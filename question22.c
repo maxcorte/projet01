@@ -6,7 +6,7 @@
 
 
 //###################################
-//### Reprise du code question 22 ###
+//### Reprise du code question 21 ###
 //###################################
 
 volatile int lock_var; 
