@@ -14,5 +14,4 @@ Ensuite nous avons créé un fichier bash afin de réaliser le nombre de mesures
 `make bash`
 
 Enfin, nous avons représenté sur différents graphes les performances réalisées afin de voir les évolutions des temps d'exécution en fonction du nombre de threads utilisés. Ces grphes sont générés avec la ligne de commade 
-
 `make python`

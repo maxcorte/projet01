@@ -7,7 +7,7 @@ files = []
 i = 1
 
 for i in range (1, 4):
-    filename = path + "question1" + str(i) + "_performance.csv"
+    filename = path + "question2" + str(i) + "_performance.csv"
     files.append(filename)
 
 i = 1
@@ -26,7 +26,7 @@ for file in files:
     plt.plot(data_mean['total_time_seconds'], marker='o', color='indigo')
     plt.plot(data_stddev['total_time_seconds'], marker='x', color='deepskyblue')
     plt.xticks(ticks=data_mean.index, labels=data_mean.index)
-    figure_path = path + "question1" + str(i) + ".pdf"
+    figure_path = path + "question2" + str(i) + ".pdf"
     plt.savefig(figure_path)
     i += 1
 
