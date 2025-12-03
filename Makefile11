@@ -1,0 +1,18 @@
+CC = gcc
+CFLAGS = -Wall -Wextra
+C_SRCS = question11.c
+C_BINS = question11
+
+.PHONY: all clean bash python
+
+all: $(C_BINS) bash clean
+
+question11: question11.c
+	$(CC) $(CFLAGS) $< -o $@
+
+bash:
+	chmod +x experiment11.sh
+	./question14.sh
+	
+clean:
+	rm -f $(C_BINS)
