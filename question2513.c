@@ -100,7 +100,7 @@ int main(int argc, char* argv[]){
     my_semaphore_init(&rsem_db, 1);
 
     
-    int nb_ecritures = 6400;
+    int nb_ecritures = 6400/num_writer;
     int nb_lectures = 25400/num_reader;
     pthread_t *threads = malloc((num_reader + num_writer) * sizeof(pthread_t));
     int *ecriture_id = malloc(num_writer * sizeof(int));
