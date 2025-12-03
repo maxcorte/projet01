@@ -12,7 +12,7 @@ question11: question11.c
 
 bash:
 	chmod +x experiment11.sh
-	./question14.sh
+	./experiment11.sh
 	
 clean:
 	rm -f $(C_BINS)
