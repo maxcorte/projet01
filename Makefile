@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pthread
-C_BINS = question11 question12 question13 question251 question252 question253
+C_BINS = question11 question12 question13 question22 question23 question251 question252 question253
 LIBS = -lpthread
 
 .PHONY: all clean bash python
@@ -8,16 +8,19 @@ LIBS = -lpthread
 all: $(C_BINS)
 
 question11: part1/philosophes/question11.c
-	$(CC) $(CFLAGS) $< -o $@
+	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
 question12: part1/producteur/question12.c
-	$(CC) $(CFLAGS) $< -o $@
+	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 	
 question13: part1/lecteur/question13.c
-	$(CC) $(CFLAGS) $< -o $@
+	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
-question24: question24.c
-	$(CC) $(CFLAGS) $< -o $@
+question22: projet01/part2/question22/question22.c
+	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
+
+question23: projet01/part2/question23/question23.c
+	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
 question251: part2/philosophe/question251.c my_semaphore.h
 	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
@@ -38,6 +41,10 @@ bash:
 	./question2.sh
 	chmod +x part1/lecteur/question3.sh
 	./question3.sh
+	chmod +x projet01/part2/question22/question22.sh
+	./question22.sh
+	chmod +x projet01/part2/question23/question23.sh
+	./question23.sh
 	chmod +x part2/philosophe/question251.sh
 	./question251.sh
 	chmod +x part2/producteur/question252.sh
@@ -45,6 +52,16 @@ bash:
 	chmod +x part2/lecteur/question253.sh
 	./question253.sh
 	
+
+run: all
+	./question11
+	./question12
+	./question13
+	./question22
+	./question23
+	./question251
+	./question252
+	./question253
 
 
 python:
@@ -67,3 +84,5 @@ clean:
 	rm -f ./question11.pdf ./question12.pdf ./question13.pdf
 	rm -f ./question21.pdf ./question22.pdf ./question23.pdf ./PlotQuestion_22_23.pdf
 	rm -f ./GlobalPlotQuestion0.pdf ./GlobalPlotQuestion1.pdf ./GlobalPlotQuestion2.pdf
+
+.DEFAULT_GOAL := all
