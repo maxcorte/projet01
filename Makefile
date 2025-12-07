@@ -7,56 +7,56 @@ LIBS = -lpthread
 
 all: $(C_BINS)
 
-question11: projet01/part1/philosophes/question11.c
+question11: part1/philosophes/question11.c
 	$(CC) $(CFLAGS) $< -o $@
 
-question12: projet01/part1/producteur/question12.c
+question12: part1/producteur/question12.c
 	$(CC) $(CFLAGS) $< -o $@
 	
-question13: projet01/part1/lecteur/question13.c
+question13: part1/lecteur/question13.c
 	$(CC) $(CFLAGS) $< -o $@
 
 question24: question24.c
 	$(CC) $(CFLAGS) $< -o $@
 
-question251: projet01/part2/philosophe/question251.c my_semaphore.h
+question251: part2/philosophe/question251.c my_semaphore.h
 	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
-question252: projet01/part2/producteur/question252.c my_semaphore.h
+question252: part2/producteur/question252.c my_semaphore.h
 	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
-question253: projet01/part2/lecteur/question253.c my_semaphore.h
+question253: part2/lecteur/question253.c my_semaphore.h
 	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
 
 
 
 bash:
-	chmod +x projet01/part1/philosophes/question1.sh
+	chmod +x part1/philosophes/question1.sh
 	./question1.sh
-	chmod +x projet01/part1/producteur/question2.sh
+	chmod +x part1/producteur/question2.sh
 	./question2.sh
-	chmod +x projet01/part1/lecteur/question3.sh
+	chmod +x part1/lecteur/question3.sh
 	./question3.sh
-	chmod +x projet01/part2/philosophe/question251.sh
+	chmod +x part2/philosophe/question251.sh
 	./question251.sh
-	chmod +x projet01/part2/producteur/question252.sh
+	chmod +x part2/producteur/question252.sh
 	./question252.sh
-	chmod +x projet01/part2/lecteur/question253.sh
+	chmod +x part2/lecteur/question253.sh
 	./question253.sh
 	
 
 
 python:
-	python3 projet01/part1/philosophes/question1.py
-	python3 projet01/part1/producteur/question2.py
-	python3 projet01/part1/lecteur/question3.py
-	python3 projet01/part2/philosophe/question251.py
-	python3 projet01/part2/producteur/question252.py
-	python3 projet01/part2/lecteur/question253.py
-	python3 projet01/graphesLecteursEcrivainsGlobal.py
-	python3 projet01/graphesPhilosophesGlobal.py
-	python3 projet01/graphesProducteursConsommateursGlobal.py
+	python3 part1/philosophes/question1.py
+	python3 part1/producteur/question2.py
+	python3 part1/lecteur/question3.py
+	python3 part2/philosophe/question251.py
+	python3 part2/producteur/question252.py
+	python3 part2/lecteur/question253.py
+	python3 graphesLecteursEcrivainsGlobal.py
+	python3 graphesPhilosophesGlobal.py
+	python3 graphesProducteursConsommateursGlobal.py
 
 	
 clean:

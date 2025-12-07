@@ -7,7 +7,9 @@ La section 1 de ce projet nous permet de visualiser et mettre en oeuvre les outi
 * Le problème des producteurs-consommateurs
 * Le problème des lecteurs-écrivains
 
-Le projet est structuré de la manière suivante. Un dossier a été créé par partie (part1 et part2). A l'intérieur de ces deux dossiers, des sous-dossiers sont présents avec chacun le nom du problème qu'ils résolvent. Dans chacun de ces sous-dossiers, nous avons un Makefile, un experiments.sh, le pdf du graphe, 
+Le projet est structuré de la manière suivante. Un dossier a été créé par partie (part1 et part2). A l'intérieur de ces deux dossiers, des sous-dossiers sont présents avec chacun le nom du problème qu'ils résolvent. Dans chacun de ces sous-dossiers, nous avons un Makefile, un experiments.sh, le pdf du graphe. 
+
+Il est utile de remarquer que les csv présents ne proviennent pas des codes mais ca provient des fichiers soumis (Makefile, bash et c) ainsi que 
 
 
 Ces trois fichiers peuvent être endus exécutables grâce au **Makefile**, plus précisément avec la ligne de commande:
