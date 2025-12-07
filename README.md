@@ -21,8 +21,63 @@ Ensuite nous avons créé un fichier bash afin de réaliser le nombre de mesures
 Enfin, nous avons représenté sur différents graphes les performances réalisées afin de voir les évolutions des temps d'exécution en fonction du nombre de threads utilisés. Ces grphes sont générés avec la ligne de commade 
 `make python`
 
-
-./
+```
+.
+├── part1
+│   ├── lecteur
+│   │   ├── plot_question3_POSIX.pdf
+│   │   ├── question13.c
+│   │   ├── question3.csv
+│   │   ├── question3.py
+│   │   └── question3.sh
+│   ├── philosophes
+│   │   ├── plot_question1_POSIX.pdf
+│   │   ├── question11.c
+│   │   ├── question1.csv
+│   │   ├── question1.py
+│   │   └── question1.sh
+│   └── producteur
+│       ├── plot_question2_POSIX.pdf
+│       ├── question12.c
+│       ├── question2.csv
+│       ├── question2.py
+│       └── question2.sh
+├── part2
+│   ├── lecteur
+│   │   ├── my_semaphore.h
+│   │   ├── plot_question3_partie2.pdf
+│   │   ├── question253.c
+│   │   ├── question253.csv
+│   │   ├── question253.py
+│   │   └── question253.sh
+│   ├── philosophe
+│   │   ├── my_semaphore.h
+│   │   ├── plot_question1_attente_active.pdf
+│   │   ├── question251.c
+│   │   ├── question251.csv
+│   │   ├── question251.py
+│   │   └── question251.sh
+│   ├── producteur
+│   │   ├── my_semaphore.h
+│   │   ├── plot_question2_attente_active.pdf
+│   │   ├── question252.c
+│   │   ├── question252.csv
+│   │   ├── question252.py
+│   │   └── question252.sh
+│   ├── question22
+│   │   ├── question22.c
+│   │   ├── question22.csv
+│   │   ├── question22.pdf
+│   │   ├── question22.py
+│   │   └── question22.sh
+│   ├── question23
+│   │   ├── question23.c
+│   │   ├── question23.csv
+│   │   ├── question23.pdf
+│   │   ├── question23.py
+│   │   └── question23.sh
+│   ├── my_semaphore.h
+│   └── question21.c
 ├── graphe_lect_ecr_global.pdf
 ├── graphe_philosophes_global.pdf
 ├── graphe_prod_cons_global.pdf
@@ -32,62 +87,8 @@ Enfin, nous avons représenté sur différents graphes les performances réalis�
 ├── graphesProducteursConsommateursGlobal.py
 ├── grapheTAS_TATAS.pdf
 ├── Makefile
-├── part1/
-│   ├── lecteur/
-│   │   ├── plot_question3_POSIX.pdf
-│   │   ├── question13.c
-│   │   ├── question3.csv
-│   │   ├── question3.py
-│   │   └── question3.sh*
-│   ├── philosophes/
-│   │   ├── plot_question1_POSIX.pdf
-│   │   ├── question11.c
-│   │   ├── question1.csv
-│   │   ├── question1.py
-│   │   └── question1.sh*
-│   └── producteur/
-│       ├── plot_question2_POSIX.pdf
-│       ├── question12.c
-│       ├── question2.csv
-│       ├── question2.py
-│       └── question2.sh*
-├── part2/
-│   ├── lecteur/
-│   │   ├── my_semaphore.h
-│   │   ├── plot_question3_partie2.pdf
-│   │   ├── question253.c
-│   │   ├── question253.csv
-│   │   ├── question253.py
-│   │   └── question253.sh*
-│   ├── my_semaphore.h
-│   ├── philosophe/
-│   │   ├── my_semaphore.h
-│   │   ├── plot_question1_attente_active.pdf
-│   │   ├── question251.c
-│   │   ├── question251.csv
-│   │   ├── question251.py
-│   │   └── question251.sh*
-│   ├── producteur/
-│   │   ├── my_semaphore.h
-│   │   ├── plot_question2_attente_active.pdf
-│   │   ├── question252.c
-│   │   ├── question252.csv
-│   │   ├── question252.py
-│   │   └── question252.sh*
-│   ├── question21.c
-│   ├── question22/
-│   │   ├── question22.c
-│   │   ├── question22.csv
-│   │   ├── question22.pdf
-│   │   ├── question22.py
-│   │   └── question22.sh*
-│   └── question23/
-│       ├── question23.c
-│       ├── question23.csv
-│       ├── question23.pdf
-│       ├── question23.py
-│       └── question23.sh*
 ├── README.md
 └── tree.txt
 
 11 directories, 56 files
+```
