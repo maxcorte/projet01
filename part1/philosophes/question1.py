@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 import pandas as pd
 
-csv_file = "./question252.csv"
+csv_file = "./question1.csv"
 
 # Lecture du CSV : chaque ligne = un nombre de threads, les colonnes = runs
 data = pd.read_csv(csv_file, skipinitialspace=True)
@@ -15,7 +15,7 @@ stds = data.std(axis=1, ddof=1)
 
 # --- Plot ---
 plt.figure(figsize=(12, 6))
-plt.title("Temps d'exécution en fonction du nombre de threads (moyenne ± écart-type)")
+plt.title("Temps d'exécution en fonction du nombre de threads (moyenne et écart-type)")
 plt.xlabel("Nombre de threads")
 plt.ylabel("Temps d'exécution (secondes)")
 plt.ylim(bottom=0)  # axe Y commence à 0 (consigne)
@@ -29,12 +29,12 @@ plt.errorbar(
     fmt='o-',
     capsize=5,
     linewidth=2,
-    label="moyenne ± écart-type"
+    label="moyenne et écart-type"
 )
 
 plt.xticks(threads)
 plt.grid(True, linestyle="--", alpha=0.5)
 plt.legend()
 
-plt.savefig("plot_question11.pdf")
+plt.savefig("plot_question1_POSIX.pdf")
 plt.show()
