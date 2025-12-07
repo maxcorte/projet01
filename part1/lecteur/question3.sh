@@ -1,6 +1,6 @@
 #!/bin/bash
 
-filename="./question3"
+filename="./question13"
 echo "Time for $filename - Lecteurs/Ecrivains"
 echo "run_1,run_2,run_3,run_4,run_5"
 

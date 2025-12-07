@@ -35,22 +35,22 @@ question253: part2/lecteur/question253.c my_semaphore.h
 
 
 bash:
-	chmod +x part1/philosophes/question1.sh
-	./question1.sh
-	chmod +x part1/producteur/question2.sh
-	./question2.sh
+	chmod +x ./part1/philosophes/question1.sh
+	./part1/philosophes/question1.sh
+	chmod +x ./part1/producteur/question2.sh
+	./part1/producteur/question2.sh
 	chmod +x part1/lecteur/question3.sh
-	./question3.sh
-	chmod +x projet01/part2/question22/question22.sh
-	./question22.sh
-	chmod +x projet01/part2/question23/question23.sh
-	./question23.sh
+	./part1/lecteur/question3.sh
+	chmod +x part2/question22/question22.sh
+	./part2/question22/question22.sh
+	chmod +x part2/question23/question23.sh
+	./part2/question23/question23.sh
 	chmod +x part2/philosophe/question251.sh
-	./question251.sh
+	./part2/philosophe/question251.sh
 	chmod +x part2/producteur/question252.sh
-	./question252.sh
+	./part2/producteur/question252.sh
 	chmod +x part2/lecteur/question253.sh
-	./question253.sh
+	./part2/lecteur/question253.sh
 	
 
 run: all

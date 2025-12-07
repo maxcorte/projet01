@@ -1,6 +1,6 @@
 #!/bin/bash
 
-filename="./question2"
+filename="./question12"
 echo "Time for $filename - Producers/Consumers"
 echo "run_1,run_2,run_3,run_4,run_5"
 
