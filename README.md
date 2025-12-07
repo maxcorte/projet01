@@ -26,6 +26,17 @@ Ensuite la commande `make bash` permet d'exécuter les fichiers bash qui sont da
 Enfin, nous avons représenté sur différents graphes les performances réalisées afin de voir les évolutions des temps d'exécution en fonction du nombre de threads utilisés. Ces graphes sont générés avec la ligne de commade 
 `make python`
 
+Il est recommandé d’utiliser un environnement virtuel.
+
+. Créer un environnement virtuel
+python -m venv venv
+
+. Activer l’environnement virtuel
+source venv/bin/activate
+
+. Installer les librairies nécessaires
+pip install matplotlib pandas
+
 Ci dessous voici l'arbre de notre projet. 
 
 ```

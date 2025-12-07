@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 import pandas as pd
 
-csv_file = "./question2.csv"
+csv_file = "part1/producteur/question2.csv"
 
 # Lecture du CSV : chaque ligne = un nombre de threads, les colonnes = runs
 data = pd.read_csv(csv_file, skipinitialspace=True)

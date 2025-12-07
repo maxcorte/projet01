@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 import pandas as pd
 
-csv_file = "./question251.csv"
+csv_file = "part2/philosophe/question251.csv"
 
 # Lecture du CSV : chaque ligne = un nombre de threads, les colonnes = runs
 data = pd.read_csv(csv_file, skipinitialspace=True)
@@ -36,5 +36,5 @@ plt.xticks(threads)
 plt.grid(True, linestyle="--", alpha=0.5)
 plt.legend()
 
-plt.savefig("plot_question1_attente_active.pdf")
+plt.savefig("plot_philosophe_partie2.pdf")
 plt.show()

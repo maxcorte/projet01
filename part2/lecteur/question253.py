@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 import pandas as pd
 
-csv_file = "./question253.csv"
+csv_file = "part2/lecteur/question253.csv"
 
 
 data = pd.read_csv(csv_file, skipinitialspace=True)
@@ -35,5 +35,5 @@ plt.xticks(threads)
 plt.grid(True, linestyle="--", alpha=0.5)
 plt.legend()
 
-plt.savefig("plot_question3_partie2.pdf")
+plt.savefig("plot_lecteur_partie2.pdf")
 plt.show()

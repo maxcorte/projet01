@@ -2,7 +2,7 @@
 
 filename="./question12"
 echo "Time for $filename - Producers/Consumers"
-echo "run_1,run_2,run_3,run_4,run_5"
+echo "producers,consumers,run_1,run_2,run_3,run_4,run_5"
 
 for (( n=2; n<=32; n*=2 ))
 do

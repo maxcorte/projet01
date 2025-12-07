@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 import pandas as pd
 
-csv_file = "./question22.csv"
+csv_file = "part2/question22/question22.csv"
 
 
 data = pd.read_csv(csv_file, skipinitialspace=True)

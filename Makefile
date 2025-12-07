@@ -16,19 +16,19 @@ question12: part1/producteur/question12.c
 question13: part1/lecteur/question13.c
 	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
-question22: projet01/part2/question22/question22.c
+question22: part2/question22/question22.c
 	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
-question23: projet01/part2/question23/question23.c
+question23: part2/question23/question23.c
 	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
-question251: part2/philosophe/question251.c my_semaphore.h
+question251: part2/philosophe/question251.c part2/philosophe/my_semaphore.h
 	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
-question252: part2/producteur/question252.c my_semaphore.h
+question252: part2/producteur/question252.c part2/producteur/my_semaphore.h
 	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
-question253: part2/lecteur/question253.c my_semaphore.h
+question253: part2/lecteur/question253.c part2/lecteur/my_semaphore.h
 	$(CC) $(CFLAGS) $< -o $@ $(LIBS)
 
 
@@ -54,14 +54,14 @@ bash:
 	
 
 run: all
-	./question11
-	./question12
-	./question13
-	./question22
-	./question23
-	./question251
-	./question252
-	./question253
+	./part1/philosophes/question11
+	./part1/producteur/question12
+	./part1/lecteur/question13
+	./part2/question22/question22
+	./part2/question23/question23
+	./part2/philosophe/question251
+	./part2/producteur/question252
+	./part2/lecteur/question253
 
 
 python:
@@ -74,15 +74,14 @@ python:
 	python3 graphesLecteursEcrivainsGlobal.py
 	python3 graphesPhilosophesGlobal.py
 	python3 graphesProducteursConsommateursGlobal.py
+	python3 graphesalgorithmeGlobal.py
 
 	
 clean:
 	rm -f $(C_BINS)
-	rm -f ./question11_performance.csv ./question12_performance.csv ./question13_performance.csv
-	rm -f ./question21_performance.csv ./question22_performance.csv ./question23_performance.csv ./question24_performance.csv
-	rm -f ./question2511_performance.csv ./question2512_performance.csv ./question2513_performance.csv
-	rm -f ./question11.pdf ./question12.pdf ./question13.pdf
-	rm -f ./question21.pdf ./question22.pdf ./question23.pdf ./PlotQuestion_22_23.pdf
-	rm -f ./GlobalPlotQuestion0.pdf ./GlobalPlotQuestion1.pdf ./GlobalPlotQuestion2.pdf
+	rm -f ./plot_question1_POSIX.pdf ./plot_question2_POSIX.pdf ./plot_question3_POSIX.pdf
+	rm -f ./plot_philosophe_partie2.pdf ./plot_producteur_partie2.pdf ./plot_lecteur_partie2.pdf
+	rm -f ./question22.pdf ./question23.pdf
+	rm -f ./graphe_lect_ecr_global.pdf ./graphe_philosophes_global.pdf ./graphe_prod_cons_global.pdf ./grapheTAS_TATAS.pdf
 
 .DEFAULT_GOAL := all
